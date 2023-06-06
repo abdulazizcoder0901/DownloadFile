@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #4285F4;
+}
+
+.wrapper{
+    width: 500px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 20px 25px 15px;
+}
+
+header h1{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+header p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+form{
+    margin: 20px 0 27px;
+}
+
+form input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 0 15px;
+}
+
+form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4285F4;
+    color: aliceblue;
+    opacity: .7;
+    pointer-events: none;
+}
+
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width:567px){
+    .wrapper{
+        width:350px ;
+    }
+}
